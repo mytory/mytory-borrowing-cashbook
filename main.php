@@ -132,12 +132,13 @@ function mbc_print_borrowing_list(){
     $total_to_others = mbc_get_total_to_others($borrowing_arr);
     $total_from_others = mbc_get_total_from_others($borrowing_arr);
     $by_person = mbc_get_borrowing_by_person($borrowing_arr);
+    $currency = get_option('mytory-borrowing-cashbook-currency');
     ?>
     <div class="mbc-summary">
         <h2><?_e('Total', 'mytory-borrowing-cashbook')?></h2>
         <ul>
-            <li><?_e('Total to others', 'mytory-borrowing-cashbook')?> : <?=number_format($total_to_others)?></li>
-            <li><?_e('Total from others', 'mytory-borrowing-cashbook')?> : <?=number_format($total_from_others)?></li>
+            <li><?_e('Total to others', 'mytory-borrowing-cashbook')?> : <?=number_format($total_to_others)?><?=$currency?></li>
+            <li><?_e('Total from others', 'mytory-borrowing-cashbook')?> : <?=number_format($total_from_others)?><?=$currency?></li>
         </ul>
         <h2><?_e('By person', 'mytory-borrowing-cashbook')?></h2>
         <ul>
@@ -149,13 +150,13 @@ function mbc_print_borrowing_list(){
                 <? if($to_person){ ?>
                     <li>
                         <?=str_replace('$person', $person, __('To $person', 'mytory-borrowing-cashbook'))?> :
-                        <?=number_format($to_person)?>
+                        <?=number_format($to_person)?><?=$currency?>
                     </li>
                 <?}?>
                 <? if($from_person){ ?>
                     <li>
                         <?=str_replace('$person', $person, __('From $person', 'mytory-borrowing-cashbook'))?> :
-                        <?=number_format($from_person)?>
+                        <?=number_format($from_person)?><?=$currency?>
                     </li>
                 <?}?>
             <?}?>
@@ -179,7 +180,7 @@ function mbc_print_borrowing_list(){
                 <td><?= _e($b['borrowing_type'], 'mytory-borrowing-cashbook')?></td>
                 <td><?= $b['date'] ?></td>
                 <td><?= $b['person'] ?></td>
-                <td class="mbc-cash"><?= number_format($b['cash']) ?></td>
+                <td class="mbc-cash"><?= number_format($b['cash']) ?><?=$currency?></td>
                 <td><?= $b['desc'] ?></td>
                 <td><input type="button" onclick="mytory_borrowing.delete_one_borrowing(<?=$b['post_id']?>)" value="<?_e('X')?>"/></td>
             </tr>
