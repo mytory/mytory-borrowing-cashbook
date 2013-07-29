@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mytory borrowing cashbook\n"
+"POT-Creation-Date: 2013-07-30 03:04+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: mytory <mytory@gmail.com>\n"
+"Language-Team: mytory.net <mytory@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../main.php:21
+msgid "borrowing"
+msgstr "빌린돈/빌려준돈"
+
+#: ../main.php:134
+msgid "Total"
+msgstr "전체"
+
+#: ../main.php:136
+msgid "Total to others"
+msgstr "전체 갚을 돈"
+
+#: ../main.php:137
+msgid "Total from others"
+msgstr "전체 받을 돈"
+
+#: ../main.php:139
+msgid "By person"
+msgstr "사람별"
+
+#: ../main.php:148
+msgid "To $person"
+msgstr "$person에게 갚을 돈"
+
+#: ../main.php:154
+msgid "From $person"
+msgstr "$person에게 받을 돈"
+
+#: ../main.php:164 ../page-cashbook-main.php:17
+msgid "Type"
+msgstr "종류"
+
+#: ../main.php:165 ../page-cashbook-main.php:42
+msgid "Date"
+msgstr "날짜"
+
+#: ../main.php:166 ../page-cashbook-main.php:50
+msgid "Person"
+msgstr "사람"
+
+#: ../main.php:167 ../page-cashbook-main.php:34
+msgid "Cash"
+msgstr "금액"
+
+#: ../main.php:168 ../page-cashbook-main.php:59
+msgid "Description"
+msgstr "메모"
+
+#: ../main.php:181
+msgid "X"
+msgstr "X"
+
+#: ../page-cashbook-main.php:20
+msgid "borrow to"
+msgstr "내가 빌려줌"
+
+#: ../page-cashbook-main.php:23
+msgid "borrow from"
+msgstr "내가 빌림"
+
+#: ../page-cashbook-main.php:26
+msgid "return to"
+msgstr "내가 갚음"
+
+#: ../page-cashbook-main.php:29
+msgid "return from"
+msgstr "돌려 받음"
+
+#: ../page-cashbook-main.php:54
+msgid "This program don`t distinguish person with the same name"
+msgstr "이 프로그램은 동명이인을 구분할 수 없습니다"
+
+#: ../page-cashbook-main.php:67
+msgid "Save"
+msgstr "저"
