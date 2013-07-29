@@ -284,3 +284,14 @@ function mbc_get_persons(){
     }
     return $persons;
 }
+
+add_action('admin_menu', 'mbc_top_menu');
+function mbc_top_menu() {
+    add_options_page(__('Borrowing Cashbook'), __('Borrowing Cashbook'), 'manage_options', 'mbc-opt', 'mbc_print_opt_page');
+}
+function mbc_print_opt_page() {
+    if ( ! current_user_can('manage_options')){
+        wp_die( __('You do not have sufficient permissions to access this page.') );
+    }
+    include dirname(__FILE__) . '/admin-opt-page.php';
+}
