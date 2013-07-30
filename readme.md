@@ -19,6 +19,7 @@ This plugin is for borrowing with friends. This is not general cashbook. Only fo
 * Show cash that get from others by person.
 * Show cash that return to others by person.
 * Show borrowing history by date and person.
+* Cashbook is only a private page. Very simple.
 
 ## Installation ##
 
