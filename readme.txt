@@ -3,7 +3,7 @@ Contributors: mytory
 Tags: cashbook
 Requires at least: 2.9
 Tested up to: 3.5.2
-Stable tag: trunk
+Stable tag: 0.9
 License: GPL2(same as Wordpress)
 
 Simple cashbook for only borrowing from/to with friends.

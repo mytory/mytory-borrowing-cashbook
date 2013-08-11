@@ -1,10 +1,16 @@
 # Mytory Borrowing Cashbook #
-**Contributors:** mytory   
-**Tags:** cashbook  
-**Requires at least:** 2.9  
-**Tested up to:** 3.5.2  
-**Stable tag:** trunk  
-**License:** GPL2(same as Wordpress)  
+**Contributors:** mytory 
+  
+**Tags:** cashbook
+  
+**Requires at least:** 2.9
+  
+**Tested up to:** 3.5.2
+  
+**Stable tag:** 0.9
+  
+**License:** GPL2(same as Wordpress)
+  
 
 Simple cashbook for only borrowing from/to with friends.
 
